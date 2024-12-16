@@ -1,0 +1,6 @@
+1) pip install scrapy
+2) scrapy startproject books
+3) cd books (if not in project directory)
+4) scrapy genspider bookSpider books.toscrape.com
+5) scrapy crawl bookSpider
+6) scrapy crawl bookSpider -O books.csv
