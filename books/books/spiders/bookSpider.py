@@ -7,7 +7,6 @@ class BookspiderSpider(scrapy.Spider):
     start_urls = ["http://books.toscrape.com"]
 
     def parse(self, response):
-        bookData = responce.
         bookTitle = response.css("h3 a::attr(title)").getall()
         for title in bookTitle:
             # print(title)
